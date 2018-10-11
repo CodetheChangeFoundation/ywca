@@ -6,7 +6,23 @@ Version: 0.0.1
 Tags: bootstrap
 */
 
+/*COLOURS
+Green - #92C04E
+Pink - #F03C69
+Dark Grey - #2B2926
+Light Grey - #EEEEEE
+Teal - #00AB96
+Blue - #6399AB
+*/
+
+
+/* GLOBALS */
+
 body {
    background-color: deepskyblue;
    color: white;
+}
+
+html {
+    font-family: "Gotham", sans-serif;
 }
