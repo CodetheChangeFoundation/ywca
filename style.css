@@ -1,0 +1,12 @@
+/*
+Theme Name: Test Theme
+Author: Sumeet
+Description: Test theme
+Version: 0.0.1
+Tags: bootstrap
+*/
+
+body {
+   background-color: deepskyblue;
+   color: white;
+}
