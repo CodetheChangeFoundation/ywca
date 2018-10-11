@@ -11,7 +11,12 @@
 </head>
 <body>
  
-<h1><?php bloginfo('title'); ?></h1>
+<h1><?php bloginfo('title'); ?>
+    
+<!--<?php    $reflFunc = new ReflectionFunction('the_title');
+print $reflFunc->getFileName() . ':' . $reflFunc->getStartLine(); ?> -->
+    
+    </h1>
  
 <h3><?php bloginfo('description'); ?></h3>
  
@@ -28,6 +33,9 @@
 <?php the_content(); ?>
  
 <hr/>
+<div class="footer">
+    <h1>This is a footer</h1>
+</div>
 <?php } ?>
 </body>
 </html>
