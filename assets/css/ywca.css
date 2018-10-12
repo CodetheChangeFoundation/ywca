@@ -1,0 +1,22 @@
+/*COLOURS
+Green - #92C04E
+Pink - #F03C69
+Dark Grey - #2B2926
+Light Grey - #EEEEEE
+Teal - #00AB96
+Blue - #6399AB
+*/
+
+/* GLOBALS */
+
+@font-face { font-family: Gotham; src: url('../fonts/Gotham-Light.otf');}
+@font-face { font-family: Gotham; font-weight: bold; src: url('../fonts/Gotham-Bold.otf');}
+@font-face { font-family: Gotham; font-style: italic ; src: url('../fonts/Gotham-BookItalic.otf');}
+
+body {
+     font-family: "Gotham", sans-serif;
+     margin: 40px;
+ }
+ h1 {
+     font-weight: bold;
+ }

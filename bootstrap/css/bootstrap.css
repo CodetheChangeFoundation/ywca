@@ -4,8 +4,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@font-face { font-family: Gotham; src: url('../fonts/Gotham-Light.otf');}
+@font-face { font-family: Gotham; font-weight: bold; src: url('../fonts/Gotham-Bold.otf');}
+@font-face { font-family: Gotham; font-style: italic ; src: url('../fonts/Gotham-BookItalic.otf');}
+
 html {
-  font-family: sans-serif;
+  font-family: "Gotham", sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
