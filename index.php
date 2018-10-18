@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="A first site using custom wordpress theme">
+<?php get_header(); ?>
 
-<title><?php bloginfo('title'); ?></title>
-<link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-</head>
-<body>
- 
 <h1><?php bloginfo('title'); ?></h1>
  
 <h3><?php bloginfo('description'); ?></h3>
  
 <?php while (have_posts()) { the_post(); ?>
  
-<h5><?php the_date(); ?></h5>
  
-<h2>
+<h2 class="strong">
 <a href="index.php?p=<?php the_ID(); ?>">
 <?php the_title(); ?>
 </a>
@@ -27,7 +15,6 @@
  
 <?php the_content(); ?>
  
-<hr/>
 <?php } ?>
-</body>
-</html>
+
+<?php get_footer();?>
