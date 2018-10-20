@@ -23,12 +23,17 @@
 
 <body <?php body_class() ?>>
 
-<div id="nav-wrapper" class="container">
+<div class="container">
   <nav class="navbar navbar-fixed-top" role="navigation">
-    <div id="inner-nav-wrapper" class="container-fluid">
+    <div class="container-fluid">
       <div class="navbar-header">
         <img class="header-logo" src="<?php echo get_header_image(); ?>" alt="" />
         <div class="header-title">YOUTH REGISTRATION PROGRAM</div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
       </div>
     
       <?php /* Primary navigation */
@@ -36,7 +41,7 @@
           'theme_location'    => 'primary',
           'depth'             => 2,
           'container'         => 'div',
-          'container_class'   => 'container-menu-class',
+          'container_class'   => 'container-menu-class collapse navbar-collapse',
           'container_id'      => 'main-nav',
           'menu_class'        => 'nav navbar-nav navbar-right',
           'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
