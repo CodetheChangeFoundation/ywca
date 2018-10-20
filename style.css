@@ -16,6 +16,15 @@ ul > li:hover {
     text-decoration: underline;
 }
 
+.container {
+    margin-bottom: 80px;
+}
+
+.container-fluid {
+    padding: 30px 30px;
+    background-color: white;
+}
+
 .header-logo {
     height: 50px;
     width: 200px;

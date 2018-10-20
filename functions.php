@@ -20,4 +20,6 @@ register_nav_menus( array(
 	'primary' => __( 'Primary Menu', 'Primary Navigation' ),
 ) );
 
+add_theme_support('custom-header');
+
 ?>

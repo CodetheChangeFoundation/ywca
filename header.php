@@ -23,24 +23,26 @@
 
 <body <?php body_class() ?>>
 
-<nav class="navbar" role="navigation">
-  <div class="collapse navbar-collapse">
-    <div class="navbar-header">
-      <img class="header-logo" src="../wp-content/uploads/2018/10/logo.png"/>
-      <div class="header-title">YOUTH REGISTRATION PROGRAM</div>
+<div id="nav-wrapper" class="container">
+  <nav class="navbar navbar-fixed-top" role="navigation">
+    <div id="inner-nav-wrapper" class="container-fluid">
+      <div class="navbar-header">
+        <img class="header-logo" src="<?php echo get_header_image(); ?>" alt="" />
+        <div class="header-title">YOUTH REGISTRATION PROGRAM</div>
+      </div>
+    
+      <?php /* Primary navigation */
+      wp_nav_menu( array(
+          'theme_location'    => 'primary',
+          'depth'             => 2,
+          'container'         => 'div',
+          'container_class'   => 'container-menu-class',
+          'container_id'      => 'main-nav',
+          'menu_class'        => 'nav navbar-nav navbar-right',
+          'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+          'walker'            => new WP_Bootstrap_Navwalker(),
+      ) );
+  ?>
     </div>
-  
-     <?php /* Primary navigation */
-     wp_nav_menu( array(
-         'theme_location'    => 'primary',
-         'depth'             => 2,
-         'container'         => 'div',
-         'container_class'   => 'container-menu-class',
-         'container_id'      => 'main-nav',
-         'menu_class'        => 'nav navbar-nav navbar-right',
-         'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-         'walker'            => new WP_Bootstrap_Navwalker(),
-     ) );
-?>
-  </div>
-</nav>
+  </nav>
+</div>
