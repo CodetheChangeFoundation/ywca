@@ -12,11 +12,14 @@ $args = array(
 $your_loop = new WP_Query( $args );
 
 if ( $your_loop->have_posts() ) : while ( $your_loop->have_posts() ) : $your_loop->the_post();
-$meta = get_post_meta( $post->ID, 'your_fields', true ); ?>
+$meta = get_post_meta( $post->ID, 'paragraph_fields', true ); ?>
 
-<h1>Content</h1>
-<?php the_content(); ?>
+<?php
+if ($meta['select']=='top')
+the_content();  // Display here if it is a top paragraph
+?>
 
+</div>
 <?php endwhile; endif; wp_reset_postdata(); ?>
 
 
@@ -32,4 +35,21 @@ $meta = get_post_meta( $post->ID, 'your_fields', true ); ?>
 
 <?php } ?>
 
+<?php
+$args = array(
+	'post_type' => 'paragraph',
+);
+if ( $your_loop->have_posts() ) {
+   while ( $your_loop->have_posts() ) {
+     $your_loop->the_post();
+     $meta = get_post_meta( $post->ID, 'paragraph_fields', true );
+     if ($meta['select']=='bottom') {
+       the_content();  // Display here if it is a top paragraph
+     }
+   }
+}
+?>
+<?php
+
+?>
 <?php get_footer();?>
