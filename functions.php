@@ -14,4 +14,23 @@ function ywca_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'bootstrap_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'ywca_enqueue_styles' );
 
-?>]
+function create_paragraph() {
+	register_post_type( 'paragraph',
+		array(
+			'labels'       => array(
+				'name'       => __( 'Paragraph' ),
+			),
+			'public'       => true,
+			'hierarchical' => true,
+			'has_archive'  => true,
+			'supports'     => array(
+				'editor',
+			),
+		)
+	);
+}
+add_action( 'init', 'create_paragraph' );
+
+
+
+?>
