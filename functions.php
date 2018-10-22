@@ -19,6 +19,16 @@ function ywca_enqueue_styles() {
 }
 
 
+function awesome_theme_setup() {
+
+  add_theme_support('menus');
+
+  register_nav_menu('primary', 'Primary Header Navigation');
+}
+
+add_action('init', 'awesome_theme_setup');
+
+
 add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_scripts' );
 
