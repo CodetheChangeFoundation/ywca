@@ -34,9 +34,9 @@ add_action( 'init', 'create_paragraph' );
 function paragraph_meta_box() {
 	add_meta_box(
 		'paragraph_meta_box', // $id
-		'Paragraph Options', // $title
+		'Paragraph', // $title
 		'show_paragraph_meta_box', // $callback
-		'paragraph', // $screen
+		'page', // $screen
 		'normal', // $context
 		'high' // $priority
 	);
@@ -48,8 +48,13 @@ function show_paragraph_meta_box() {
 
 	<input type="hidden" name="paragraph_meta_box_nonce" value="<?php echo wp_create_nonce( basename(__FILE__) ); ?>">
 <p>
-	<label for="paragraph_fields[select]">Location</label>
+  <p>
+	<label for="paragraph_fields[text]">Text</label>
 	<br>
+	<textarea name="paragraph_fields[text]" id="paragraph_fields[text]" rows="5" cols="30" style="width:500px;"><?php echo $meta['textarea']; ?></textarea>
+  </p>
+  <label for="paragraph_fields[select]">Location</label>
+  <br>
 	<select name="paragraph_fields[select]" id="paragraph_fields[select]">
 			<option value="top" <?php selected( $meta['select'], 'top' ); ?>>Top of page</option>
 			<option value="bottom" <?php selected( $meta['select'], 'bottom' ); ?>>Bottom of page</option>

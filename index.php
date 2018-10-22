@@ -7,20 +7,23 @@
 <?php
 
 $args = array(
-	'post_type' => 'paragraph',
+	'post_type' => 'page',
 );
 $your_loop = new WP_Query( $args );
 
 if ( $your_loop->have_posts() ) : while ( $your_loop->have_posts() ) : $your_loop->the_post();
-$meta = get_post_meta( $post->ID, 'paragraph_fields', true ); ?>
+$meta = get_post_meta( $post->ID, 'paragraph_fields', true );
 
-<?php
-if ($meta['select']=='top')
-the_content();  // Display here if it is a top paragraph
+    if ($meta['select'] == "top" && is_page()) {
+        echo $meta['text'];
+    }
 ?>
 
-</div>
-<?php endwhile; endif; wp_reset_postdata(); ?>
+
+
+<?php endwhile; endif; wp_reset_postdata();
+?>
+
 
 
 <?php while (have_posts()) { the_post(); ?>
@@ -36,20 +39,21 @@ the_content();  // Display here if it is a top paragraph
 <?php } ?>
 
 <?php
-$args = array(
-	'post_type' => 'paragraph',
-);
-if ( $your_loop->have_posts() ) {
-   while ( $your_loop->have_posts() ) {
-     $your_loop->the_post();
-     $meta = get_post_meta( $post->ID, 'paragraph_fields', true );
-     if ($meta['select']=='bottom') {
-       the_content();  // Display here if it is a top paragraph
-     }
-   }
-}
-?>
-<?php
 
+$args = array(
+    'post_type' => 'page',
+);
+$your_loop = new WP_Query( $args );
+
+if ( $your_loop->have_posts() ) : while ( $your_loop->have_posts() ) : $your_loop->the_post();
+    $meta = get_post_meta( $post->ID, 'paragraph_fields', true );
+    if ($meta['select'] == "bottom" && is_page()) {
+        echo $meta['text'];
+    }
+    ?>
+
+
+
+<?php endwhile; endif; wp_reset_postdata();
 ?>
 <?php get_footer();?>
