@@ -34,12 +34,12 @@ ul > li > a {
 
 .container {
     margin-bottom: 80px;
+    margin-top: 80px;
 }
 
 .container-fluid {
     padding: 30px 30px;
     background-color: white;
-    margin-top: 50px;
 }
 
 .header-logo {
@@ -71,5 +71,6 @@ ul > li > a {
 }
 
 #header-nav {
-    margin-right: 30px;
+    padding-right: 30px;
+    box-shadow:0px 2px 2px #ebebeb
 }
