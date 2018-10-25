@@ -44,6 +44,3 @@ function wpt_register_css() {
 add_action( 'wp_enqueue_scripts', 'wpt_register_css' );
 
 ?>
-<?php // Register custom navigation walker
-    require_once('wp_bootstrap_navwalker.php');
-?>
