@@ -24,11 +24,11 @@
 <body <?php body_class() ?>>
 
 <div class="container">
-  <nav class="navbar navbar-fixed-top" role="navigation">
+  <nav id="header-nav" class="navbar navbar-fixed-top" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
         <img class="header-logo" src="<?php echo get_header_image(); ?>" alt="" />
-        <div class="header-title">YOUTH REGISTRATION PROGRAM</div>
+        <div class="header-title"><?php bloginfo('title')?></div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
