@@ -7,17 +7,20 @@ Tags: bootstrap
 <<<<<<< HEAD
 */
 
-body {
-   background-color: deepskyblue;
-   color: white;
-}
+
 
 .footer {
-    position: fixed;
-    bottom: 0%;
-    left: 0%;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 100vw;
-    background: saddlebrown;
+  position: absolute;
+  bottom: 0;
+  padding: 40px 10;
+  color: #010101;
+  text-align: center;
+  background-color: #B2AFAF;
+  border-top: 1px solid #e5e5e5;
+}
+.footer p:last-child {
+  margin-bottom: 10;
+}
+.vl {
+  border-left: thin solid #010101;
 }
