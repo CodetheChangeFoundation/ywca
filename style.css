@@ -4,4 +4,20 @@ Author: Code The Change Foundation
 Description: YWCA
 Version: 0.0.1
 Tags: bootstrap
+<<<<<<< HEAD
 */
+
+body {
+   background-color: deepskyblue;
+   color: white;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100vw;
+    background: saddlebrown;
+}
