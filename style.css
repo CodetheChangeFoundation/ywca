@@ -24,3 +24,7 @@ Tags: bootstrap
 .vl {
   border-left: thin solid #010101;
 }
+.footer-container{
+  display: flex;
+  flex-direction: row;
+}
