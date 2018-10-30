@@ -17,6 +17,21 @@ body {
      font-family: "Gotham", sans-serif;
      margin: 40px;
  }
+
  h1 {
      font-weight: bold;
+ }
+
+ .primary-btn {
+     background-color: #92C04E;
+     color: #fff;
+     text-transform: uppercase;
+     width: 33%;
+     height: 60px;
+     border-radius: 40px;
+ }
+
+ .primary-btn-wrapper {
+     display: flex;
+     justify-content: center;
  }
