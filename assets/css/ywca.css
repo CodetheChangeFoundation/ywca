@@ -35,3 +35,17 @@ body {
      display: flex;
      justify-content: center;
  }
+
+ .submit-btn {
+    background-color: #F03C69;
+    color: #fff;
+    text-transform: uppercase;
+    width: 33%;
+    height: 60px;
+    border-radius: 40px;
+ }
+
+ .submit-btn-wrapper {
+     display: flex;
+     justify-content: center;
+ }
