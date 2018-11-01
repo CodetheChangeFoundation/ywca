@@ -20,3 +20,12 @@ body {
  h1 {
      font-weight: bold;
  }
+
+
+ h1 {
+   font-size: 40px;
+   font-family: "Gotham", sans-serif;
+   text-align: center;
+   margin-top: 12px;
+   margin-bottom: 8px;
+ }
