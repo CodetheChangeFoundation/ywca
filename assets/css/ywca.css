@@ -51,7 +51,7 @@ h1 {
 }
 
 
-ul > li > a {
+.nav-link {
     color: black;
     text-transform: uppercase;
     font-weight: bold;
