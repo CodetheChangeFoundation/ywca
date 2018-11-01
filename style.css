@@ -4,7 +4,6 @@ Author: Code The Change Foundation
 Description: YWCA
 Version: 0.0.1
 Tags: bootstrap
-<<<<<<< HEAD
 */
 
 
@@ -12,19 +11,22 @@ Tags: bootstrap
 .footer {
   position: absolute;
   bottom: 0;
-  padding: 40px 10;
-  color: #010101;
+  padding: 10px 10;
   text-align: center;
-  background-color: #B2AFAF;
-  border-top: 1px solid #e5e5e5;
+  font-family: Gotham;
+  font-size: 12;
+  background-color: #EEEEEE;
+  border-top: 10px solid #e5e5e5;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
 }
 .footer p:last-child {
   margin-bottom: 10;
+  font-family: Gotham;
 }
-.vl {
-  border-left: thin solid #010101;
-}
-.footer-container{
-  display: flex;
-  flex-direction: row;
+#vl {
+border-right: 2px solid black;
+padding: 0px 10px;
 }
