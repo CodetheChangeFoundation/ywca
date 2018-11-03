@@ -4,26 +4,6 @@
 
 <h3><?php bloginfo('description'); ?></h3>
 
-<?php
-
-$args = array(
-    'post_type' => 'page',
-);
-$your_loop = new WP_Query( $args );
-
-if ( $your_loop->have_posts() ) : while ( $your_loop->have_posts() ) : $your_loop->the_post();
-    $meta = get_post_meta( $post->ID, 'paragraph_fields', true );
-
-    if ($meta['select'] == "top" && is_page($post->ID)) {
-        echo $meta['text'];
-    }
-    ?>
-
-
-
-<?php endwhile; endif; wp_reset_postdata();
-?>
-
 
 
 <?php while (have_posts()) { the_post(); ?>
@@ -40,20 +20,18 @@ if ( $your_loop->have_posts() ) : while ( $your_loop->have_posts() ) : $your_loo
 
 <?php
 
-$args = array(
-    'post_type' => 'page',
-);
-$your_loop = new WP_Query( $args );
+$paraEnabled = get_field("paragraph-enabled");
+if ($paraEnabled) { // Set up varialbes if the paragraph was enabled
+  $para = get_field("paragraph");
+  $title = get_field("title");
+  $title_size = get_field("title_size");
+  if($title) { // If the title was not left blank, then display it
+    echo "<${title_size}> ${title} </${title_size}>";
+  }
+  if ($para) { // If there is something in paragraph, display it
+    echo "<p>${para}</p>";
+  }
+}
+ ?>
 
-if ( $your_loop->have_posts() ) : while ( $your_loop->have_posts() ) : $your_loop->the_post();
-    $meta = get_post_meta( $post->ID, 'paragraph_fields', true );
-    if ($meta['select'] == "bottom" && is_page($post->ID)) {
-        echo $meta['text'];
-    }
-    ?>
-
-
-
-<?php endwhile; endif; wp_reset_postdata();
-?>
 <?php get_footer();?>
