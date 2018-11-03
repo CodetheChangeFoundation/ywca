@@ -64,7 +64,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5bdd3fc6e81f7',
-			'label' => 'Title size',
+			'label' => 'Title Size',
 			'name' => 'title_size',
 			'type' => 'select',
 			'instructions' => 'The size of the title. Only needed if Add Title is checked. Currently non-functional.',
