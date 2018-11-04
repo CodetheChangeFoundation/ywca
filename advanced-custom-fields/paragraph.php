@@ -43,55 +43,6 @@ acf_add_local_field_group(array(
 			'append' => '',
 			'maxlength' => '',
 		),
-		array(
-			'key' => 'field_5bdd3f90e81f6',
-			'label' => 'Title',
-			'name' => 'title',
-			'type' => 'text',
-			'instructions' => 'Write the title here. Leave blank if you do not want a title.',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => 'Title here',
-			'prepend' => '',
-			'append' => '',
-			'maxlength' => '',
-		),
-		array(
-			'key' => 'field_5bdd3fc6e81f7',
-			'label' => 'Title Size',
-			'name' => 'title_size',
-			'type' => 'select',
-			'instructions' => 'The size of the title. Only needed if Add Title is checked. Currently non-functional.',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'choices' => array(
-				'h1' => 'Extremely large',
-				'h2' => 'Large',
-				'h3' => 'Medium',
-				'h4' => 'Small',
-				'h5' => 'Very small',
-			),
-			'default_value' => array(
-				0 => 1,
-			),
-			'allow_null' => 0,
-			'multiple' => 0,
-			'ui' => 0,
-			'return_format' => 'value',
-			'ajax' => 0,
-			'placeholder' => '',
-		),
 	),
 	'location' => array(
 		array(
@@ -112,4 +63,5 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
-endif; ?>
+endif;
+ ?>
