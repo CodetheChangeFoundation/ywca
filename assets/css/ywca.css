@@ -14,9 +14,63 @@ Blue - #6399AB
 @font-face { font-family: Gotham; font-style: italic ; src: url('../fonts/Gotham-BookItalic.otf');}
 
 body {
-     font-family: "Gotham", sans-serif;
-     margin: 40px;
- }
- h1 {
-     font-weight: bold;
- }
+    font-family: "Gotham", sans-serif;
+    margin: 40px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+ul > li > a {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
+
+.container {
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.container-fluid {
+    padding: 30px 30px;
+    background-color: white;
+}
+
+.header-logo {
+    height: 50px;
+    width: 200px;
+    padding: 0px 10px;
+    border-right: 2px solid black;
+}
+
+.navbar-header {
+    display: flex;
+}
+
+.navbar-toggle {
+    margin-left: auto;
+}
+
+.header-title {
+    padding-left: 10px;
+    font-weight: bold;
+    color: black;
+    width: 50px;
+    word-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.icon-bar {
+    background-color: black;
+}
+
+#header-nav {
+    padding-right: 30px;
+    box-shadow:0px 2px 2px #ebebeb
+}
