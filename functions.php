@@ -22,4 +22,19 @@ register_nav_menus( array(
 
 add_theme_support('custom-header');
 
+// Widgets
+function footer_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Footer text widget',
+		'id'            => 'footer_text',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'footer_widgets_init' );
+
 ?>
