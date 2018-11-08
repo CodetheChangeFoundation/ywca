@@ -1,0 +1,18 @@
+{
+  "ignore": [
+    "adjoining-classes"
+  ],
+  "warnings": [
+    "ids",
+    "important"
+  ],
+  "errors": [
+    "display-property-grouping",
+    "empty-rules",
+    "duplicate-properties",
+    "known-properties",
+    "zero-units",
+    "require-shorthand-properties",
+    "duplicate-background-images"
+  ]
+}

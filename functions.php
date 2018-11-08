@@ -31,5 +31,12 @@ add_action('init', 'footer_menu');
 
 add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_scripts' );
+=======
+add_theme_support('menus');
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+register_nav_menus( array(
+	'primary' => __( 'Primary Menu', 'Primary Navigation' ),
+) );
 
+add_theme_support('custom-header');
 ?>

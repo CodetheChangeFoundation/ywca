@@ -1,4 +1,4 @@
-<<?php
+<?php
 /**
  * Code the Change template for the header
  *
@@ -22,3 +22,32 @@
   </head>
 
 <body <?php body_class() ?>>
+
+<div class="container">
+  <nav id="header-nav" class="navbar navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <img class="header-logo" src="<?php echo get_header_image(); ?>" alt="" />
+        <div class="header-title"><?php bloginfo('title')?></div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+      </div>
+    
+      <?php /* Primary navigation */
+      wp_nav_menu( array(
+          'theme_location'    => 'primary',
+          'depth'             => 2,
+          'container'         => 'div',
+          'container_class'   => 'container-menu-class collapse navbar-collapse',
+          'container_id'      => 'main-nav',
+          'menu_class'        => 'nav navbar-nav navbar-right',
+          'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+          'walker'            => new WP_Bootstrap_Navwalker(),
+      ) );
+  ?>
+    </div>
+  </nav>
+</div>
