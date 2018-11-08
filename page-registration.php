@@ -6,8 +6,6 @@ get_header(); ?>
 
 <h1><?php get_template_part('title'); ?></h1>
 
-<h3><?php bloginfo('description'); ?></h3>
-
 <?php
 if (have_posts()) {
     while (have_posts()) {
