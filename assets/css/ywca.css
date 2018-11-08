@@ -15,7 +15,6 @@ Blue - #6399AB
 
 body {
     font-family: "Gotham", sans-serif;
-    margin: 40px;
 }
 
 h1 {
@@ -71,6 +70,20 @@ ul > li > a {
 }
 
 #header-nav {
-    padding-right: 30px;
     box-shadow:0px 2px 2px #ebebeb
 }
+
+.mid-section {
+    width: 100%;
+    background-color: #eeeeee;
+    height: 300px;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.home-page-img {
+    width: 100%;
+}
+
