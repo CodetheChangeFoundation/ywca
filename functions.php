@@ -1,5 +1,5 @@
 <?php
-require get_template_directory() . './advanced-custom-fields/paragraph.php';
+require get_template_directory() . '/advanced-custom-fields/paragraph.php';
 function bootstrap_enqueue_styles () {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
     $dependencies = array('jquery');
