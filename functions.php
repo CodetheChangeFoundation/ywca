@@ -16,6 +16,7 @@ add_action( 'wp_enqueue_scripts', 'ywca_enqueue_styles' );
 
 require get_template_directory() . '/custom-fields/primary-button.php';
 require get_template_directory() . '/custom-fields/submit-button.php';
+require get_template_directory() . '/custom-fields/register-button.php';
 
 
 add_theme_support('menus');

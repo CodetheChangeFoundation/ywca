@@ -18,9 +18,6 @@
  
 <?php the_content(); ?>
 
-<?php get_template_part("template-parts/primary-button") ?>
-<?php get_template_part("template-parts/submit-button") ?>
-
 
 
 

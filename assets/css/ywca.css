@@ -22,8 +22,7 @@ h1 {
     font-weight: bold;
 }
 
-.primary-btn {
-    background-color: #92C04E;
+.custom-field-btn {
     color: #fff;
     text-transform: uppercase;
     width: 33%;
@@ -31,21 +30,19 @@ h1 {
     border-radius: 40px;
 }
 
-.primary-btn-wrapper {
-    display: flex;
-    justify-content: center;
+.primary-btn {
+    background-color: #92C04E;
 }
 
 .submit-btn {
     background-color: #F03C69;
-    color: #fff;
-    text-transform: uppercase;
-    width: 33%;
-    height: 60px;
-    border-radius: 40px;
 }
 
-.submit-btn-wrapper {
+.register-btn {
+    background-color: #000;
+}
+
+.custom-btn-wrapper {
     display: flex;
     justify-content: center;
 }
