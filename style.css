@@ -5,29 +5,3 @@ Description: YWCA
 Version: 0.0.1
 Tags: bootstrap
 */
-
-
-
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  padding: 10px 10;
-  text-align: center;
-  font-family: Gotham;
-  font-size: 12;
-  background-color: #EEEEEE;
-  border-top: 10px solid #e5e5e5;
-}
-.flex-container {
-  display: flex;
-  flex-direction: row;
-}
-.footer p:last-child {
-  margin-bottom: 10;
-  font-family: Gotham;
-}
-#vl {
-border-right: 2px solid black;
-padding: 0px 10px;
-}

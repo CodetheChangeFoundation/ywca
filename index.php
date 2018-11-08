@@ -8,8 +8,7 @@
 
 <h1><?php bloginfo('title'); ?>
 
-<!--<?php    $reflFunc = new ReflectionFunction('the_title');
-print $reflFunc->getFileName() . ':' . $reflFunc->getStartLine(); ?> -->
+
 
     </h1>
 
