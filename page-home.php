@@ -9,13 +9,25 @@
 
 <div class="mid-section">
     <div class="mid-section-title">
-        Programs!
+        Programs
     </div>
     <div class="programs">
-        <span style="background-color: #92C04E" class="dot"></span>
-        <span style="background-color: #F03C69" class="dot"></span>
-        <span style="background-color: #00AB96" class="dot"></span>
-        <span style="background-color: #6399AB" class="dot"></span>
+        <div class="dot-wrapper">
+            <span style="background-color: #92C04E" class="dot"></span>
+            <span class="program-title">That's Just Me</span>
+        </div>
+        <div class="dot-wrapper">
+            <span style="background-color: #F03C69" class="dot"></span>
+            <span class="program-title">Welcome To My Life</span>
+        </div>
+        <div class="dot-wrapper">
+            <span style="background-color: #00AB96" class="dot"></span>
+            <span class="program-title">Being Me</span>
+        </div>
+        <div class="dot-wrapper">
+            <span style="background-color: #6399AB" class="dot"></span>
+            <span class="program-title">Boys 4 Life</span>
+        </div>
     </div>
 </div>
 

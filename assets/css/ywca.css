@@ -73,14 +73,14 @@ ul > li > a {
 .mid-section {
     width: 100%;
     background-color: #eeeeee;
-    height: 350px;
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
 
 .mid-section-title {
     align-self: center;
-    font-size: 30px;
+    font-size: 60px;
     padding-top: 20px;
 
 }
@@ -95,16 +95,28 @@ ul > li > a {
 }
 
 .dot {
-    height: 175px;
-    width: 175px;
+    height: 275px;
+    width: 275px;
     display: inline-block;
     border-radius: 50%;
+    flex-direction: column;
+}
+
+.dot-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .programs {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 10px;
+    padding-top: 30px;
+}
+
+.program-title {
+    align-self: center;
+    font-size: 30px;
+    padding-top: 15px;
 }
 
 .img-container {
