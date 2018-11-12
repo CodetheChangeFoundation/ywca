@@ -8,7 +8,15 @@
 <div>Welcome!</div>
 
 <div class="mid-section">
-    Mid section
+    <div class="mid-section-title">
+        Programs!
+    </div>
+    <div class="programs">
+        <span style="background-color: #92C04E" class="dot"></span>
+        <span style="background-color: #F03C69" class="dot"></span>
+        <span style="background-color: #00AB96" class="dot"></span>
+        <span style="background-color: #6399AB" class="dot"></span>
+    </div>
 </div>
 
 <div>Bottom List with Button</div>

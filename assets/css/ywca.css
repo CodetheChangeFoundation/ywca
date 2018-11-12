@@ -39,6 +39,7 @@ ul > li > a {
 .container-fluid {
     padding: 30px 30px;
     background-color: white;
+    box-shadow:0px 5px 5px #ebebeb
 }
 
 .header-logo {
@@ -69,14 +70,41 @@ ul > li > a {
     background-color: black;
 }
 
-#header-nav {
-    box-shadow:0px 2px 2px #ebebeb
-}
-
 .mid-section {
     width: 100%;
     background-color: #eeeeee;
-    height: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mid-section-title {
+    align-self: center;
+    font-size: 30px;
+    padding-top: 20px;
+
+}
+
+.mid-section-title:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 10px;
+    border-bottom: solid 0.5px #F03C69;
+}
+
+.dot {
+    height: 175px;
+    width: 175px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.programs {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
 }
 
 .img-container {
