@@ -69,6 +69,26 @@ ul > li > a {
 .icon-bar {
     background-color: black;
 }
+.welcome-section {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.welcome-text {
+    align-self: center;
+    padding: 0px 100px;
+}
+
+.welcome-text > span:nth-child(1) {
+    font-size: 25px;
+}
+
+.welcome-text > span:nth-child(2) {
+    font-size: 20px;
+}
 
 .mid-section {
     width: 100%;
@@ -78,14 +98,22 @@ ul > li > a {
     flex-direction: column;
 }
 
-.mid-section-title {
+.lower-section {
+    padding: 0px 100px;
+}
+
+.lower-section > p {
+    font-size: 36px;
+    padding: 20px 0px;
+}
+.section-title {
     align-self: center;
     font-size: 60px;
     padding-top: 20px;
-
+    padding-bottom: 30px;
 }
 
-.mid-section-title:after {
+.section-title:after {
     content: "";
     display: block;
     margin: 0 auto;
@@ -107,10 +135,28 @@ ul > li > a {
     flex-direction: column;
 }
 
+.round-list-number {
+    height: 60px;
+    width: 60px;
+    padding: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #92C04E;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.list-steps {
+    display: flex;
+    flex-direction: column;
+}
+
 .programs {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 30px;
 }
 
 .program-title {
