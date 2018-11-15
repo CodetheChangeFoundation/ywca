@@ -4,7 +4,10 @@
  
 <h3><?php bloginfo('description'); ?></h3>
  
-<?php while (have_posts()) { the_post(); ?>
+<?php while (have_posts()) { 
+    the_post(); 
+    
+    ?>
  
  
 <h2 class="strong">
@@ -14,6 +17,10 @@
 </h2>
  
 <?php the_content(); ?>
+
+
+
+
  
 <?php } ?>
 
