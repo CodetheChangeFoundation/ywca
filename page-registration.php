@@ -19,8 +19,6 @@ if (have_posts()) {
 } // end if
 ?>
 
-<!-- <h5><?php the_date(); ?></h5> -->
-
 <h2>
   <a href="index.php?p=<?php the_ID(); ?>"></a>
 </h2>

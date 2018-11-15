@@ -14,7 +14,6 @@ Blue - #6399AB
 @font-face { font-family: Gotham; font-style: italic ; src: url('../fonts/Gotham-BookItalic.otf');}
 
 body {
-<<<<<<< HEAD
      font-family: "Gotham", sans-serif;
      margin: 40px;
  }
@@ -91,4 +90,3 @@ ul > li > a {
     padding-right: 30px;
     box-shadow:0px 2px 2px #ebebeb
 }
->>>>>>> 8533a30c16c2396253f8bd75beb32649edfc47fd

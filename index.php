@@ -9,9 +9,8 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
-        <article class="post">
         <p><?php the_content(); ?></p>
-    </article>
+
     <?php
 } // end while
 } // end if
