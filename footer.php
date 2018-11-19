@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/assets/css/ywca.css">
   <footer class="footer">
     <div class="flex-container">
           <div>
