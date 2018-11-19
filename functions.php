@@ -12,11 +12,19 @@ function ywca_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'bootstrap_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'ywca_enqueue_styles' );
 
+<<<<<<< HEAD
 
 
 add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_scripts' );
 
+=======
+require get_template_directory() . '/custom-fields/primary-button.php';
+require get_template_directory() . '/custom-fields/submit-button.php';
+require get_template_directory() . '/custom-fields/register-button.php';
+
+
+>>>>>>> origin
 add_theme_support('menus');
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 register_nav_menus( array(
