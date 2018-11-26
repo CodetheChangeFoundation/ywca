@@ -9,13 +9,29 @@ Blue - #6399AB
 
 /* GLOBALS */
 
-@font-face { font-family: Gotham; src: url('../fonts/Gotham-Light.otf');}
-@font-face { font-family: Gotham; font-weight: bold; src: url('../fonts/Gotham-Bold.otf');}
-@font-face { font-family: Gotham; font-style: italic ; src: url('../fonts/Gotham-BookItalic.otf');}
+@font-face {
+    font-family: Gotham;
+    src: url('../fonts/Gotham-Light.otf');
+}
 
+@font-face {
+    font-family: Gotham;
+    font-weight: bold;
+    src: url('../fonts/Gotham-Bold.otf');
+}
+
+@font-face {
+    font-family: Gotham;
+    font-style: italic;
+    src: url('../fonts/Gotham-BookItalic.otf');
+}
+
+html,
 body {
     font-family: "Gotham", sans-serif;
-    margin: 40px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -50,8 +66,8 @@ h1 {
 
 .nav-link {
     color: black;
-    text-transform: uppercase;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .active {
@@ -64,16 +80,18 @@ h1 {
 }
 
 .container-fluid {
-    padding: 30px 30px;
     background-color: white;
+    padding: 30px 30px;
 }
 
 .header-logo {
-    height: 50px;
-    width: 200px;
-    padding: 0px 10px;
     border-right: 2px solid black;
+    height: 50px;
+    padding: 0 10px;
+    width: 200px;
 }
+
+/* NAV */
 
 .navbar-header {
     display: flex;
@@ -84,12 +102,12 @@ h1 {
 }
 
 .header-title {
-    padding-left: 10px;
-    font-weight: bold;
     color: black;
-    width: 50px;
-    word-wrap: wrap;
+    font-weight: bold;
+    padding-left: 10px;
     text-transform: uppercase;
+    width: 50px;
+    word-wrap: normal;
 }
 
 .icon-bar {
@@ -97,6 +115,47 @@ h1 {
 }
 
 #header-nav {
-    padding-right: 30px;
-    box-shadow:0px 2px 2px #ebebeb
+    box-shadow: 0 2px 2px #ebebeb;
+    padding-right: 30px
+}
+
+.content-wrapper {
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px;
+    min-height: 100%;
+}
+
+/* FOOTER */
+
+.push {
+    height: 80px;
+}
+
+.footer {
+    font-family: Gotham;
+    font-size: 11px;
+    background-color: #EEEEEE;
+    min-height: 125px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 50px 10px;
+    text-align: center;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+#footer-logo-vertical-line {
+    height: 51.1px;
+    width: 190px;
+    border-right: 2px solid black;
+    padding: 0 15px;
 }

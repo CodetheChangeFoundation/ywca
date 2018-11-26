@@ -1,6 +1,4 @@
-<?php
-
-function bootstrap_enqueue_styles () {
+<?php function bootstrap_enqueue_styles () {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
     $dependencies = array('jquery');
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', $dependencies, '3.3.6', true );
@@ -18,7 +16,6 @@ require get_template_directory() . '/custom-fields/primary-button.php';
 require get_template_directory() . '/custom-fields/submit-button.php';
 require get_template_directory() . '/custom-fields/register-button.php';
 
-
 add_theme_support('menus');
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 register_nav_menus( array(
@@ -27,4 +24,16 @@ register_nav_menus( array(
 
 add_theme_support('custom-header');
 
+// Widgets
+function footer_widgets_init() {
+	register_sidebar( array(
+		'name'          => 'Footer text widget',
+		'id'            => 'footer_text',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'footer_widgets_init' );
 ?>
