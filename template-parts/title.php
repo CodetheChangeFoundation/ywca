@@ -1,7 +1,9 @@
 <?php
   if(!get_field('enable_title_section')):
     if(get_field('title_section')): ?>
-      <p><?php echo get_field('title_section') ?></p>
+    <div class="custom-title">
+      <?php echo get_field('title_section') ?>
+    </div>
     <?php endif;
   endif;
 ?>

@@ -32,13 +32,9 @@ acf_add_local_field_group(array(
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => array(
-				array(
-					array(
-						'field' => 'field_5bd0c272ad9ac',
-						'operator' => '==',
-						'value' => '1',
-					),
-				),
+				'field' => 'field_5bd0c272ad9ac',
+				'operator' => '==',
+				'value' => '1',
 			),
 			'wrapper' => array(
 				'width' => '',
@@ -55,18 +51,11 @@ acf_add_local_field_group(array(
 	'location' => array(
 		array(
 			array(
-				'param' => 'page',
+				'param' => 'post_type',
 				'operator' => '==',
-				'value' => '9',
+				'value' => 'page',
 			),
-		),
-		array(
-			array(
-				'param' => 'page',
-				'operator' => '==',
-				'value' => '10',
-			),
-		),
+		)
 	),
 	'menu_order' => 0,
 	'position' => 'normal',

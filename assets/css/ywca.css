@@ -124,6 +124,7 @@ h1 {
     height: 100%;
     margin: 0 auto -100px;
     min-height: 100%;
+    padding: 0 45px;
 }
 
 /* FOOTER */
@@ -154,8 +155,11 @@ h1 {
 }
 
 #footer-logo-vertical-line {
-    height: 51.1px;
     width: 190px;
     border-right: 2px solid black;
     padding: 0 15px;
+}
+
+.custom-title {
+    color: #2B2926;
 }
