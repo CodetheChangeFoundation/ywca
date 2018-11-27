@@ -9,12 +9,14 @@ function ywca_enqueue_styles() {
     wp_enqueue_style('customcss', get_template_directory_uri() . '/assets/css/ywca.css', array(), '1.0', 'all');
     wp_enqueue_script('customjs', get_template_directory_uri() . '/assets/js/ywca.js', array(), '1.0.0', true);
 }
+
 add_action( 'wp_enqueue_scripts', 'bootstrap_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'ywca_enqueue_styles' );
 
 require get_template_directory() . '/custom-fields/primary-button.php';
 require get_template_directory() . '/custom-fields/submit-button.php';
 require get_template_directory() . '/custom-fields/register-button.php';
+require get_template_directory() . '/custom-fields/title.php';
 
 add_theme_support('menus');
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
