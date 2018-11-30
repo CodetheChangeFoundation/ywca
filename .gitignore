@@ -19,3 +19,4 @@ wp-content/plugins/hello.php
 
 .DS_Store
 .idea
+/bootstrap/.DS_Store

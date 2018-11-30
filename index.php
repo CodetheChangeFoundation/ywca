@@ -1,11 +1,19 @@
 <?php get_header(); ?>
+<div class="content-wrapper">
+
+<title><?php bloginfo('title'); ?></title>
+
+</head>
+<body>
+
+<h1><?php get_template_part('template-parts/title')?></h1>
 
 <h1><?php bloginfo('title'); ?></h1>
 <h3><?php bloginfo('description'); ?></h3>
 
- 
-<?php while (have_posts()) { 
-    the_post(); 
+
+<?php while (have_posts()) {
+    the_post();
 ?>
 
 <h2 class="strong">
@@ -14,7 +22,7 @@
   </a>
 </h2>
 
-<?php the_content(); 
-} 
+<?php the_content();
+}
 get_template_part('template-parts/paragraph');
 get_footer();?>
