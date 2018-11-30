@@ -38,6 +38,21 @@ h1 {
     font-weight: bold;
 }
 
+.active {
+    border-bottom: 2px solid black;
+}
+
+.container {
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.container-fluid {
+    background-color: white;
+    padding: 30px 30px;
+}
+
+/* BUTTONS */
 .custom-field-btn {
     color: #fff;
     text-transform: uppercase;
@@ -63,26 +78,15 @@ h1 {
     justify-content: center;
 }
 
-
-.nav-link {
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
+.content-wrapper {
+    height: auto !important;
+    /* height: 100%; */
+    margin: 0 auto -100px;
+    min-height: 100%;
+    padding: 0 15vw;
 }
 
-.active {
-    border-bottom: 2px solid black;
-}
-
-.container {
-    margin-bottom: 80px;
-    margin-top: 80px;
-}
-
-.container-fluid {
-    background-color: white;
-    padding: 30px 30px;
-}
+/* NAV */
 
 .header-logo {
     border-right: 2px solid black;
@@ -91,7 +95,11 @@ h1 {
     width: 200px;
 }
 
-/* NAV */
+.nav-link {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 .navbar-header {
     display: flex;
@@ -119,18 +127,10 @@ h1 {
     padding-right: 30px
 }
 
-.content-wrapper {
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -100px;
-    min-height: 100%;
-    padding: 0 45px;
-}
-
 /* FOOTER */
 
 .push {
-    height: 80px;
+    height: 100px;
 }
 
 .footer {
@@ -160,6 +160,7 @@ h1 {
     padding: 0 15px;
 }
 
+/* CUSTOM FIELDS */
 .custom-title {
     color: #2B2926;
     font-weight: normal;
@@ -172,4 +173,11 @@ h1 {
     margin: 25px auto 0;
     width: 10vw;
     height: 2px;
+}
+
+.custom-paragraph {
+    font-family: "Gotham";
+    font-size: 16px;
+    line-height: 30px;
+    color: #2B2926;
 }

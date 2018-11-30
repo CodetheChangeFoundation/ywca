@@ -18,4 +18,5 @@ wp-content/plugins/hello.php
 /sitemap.xml.gz
 
 .DS_Store
+.idea
 /bootstrap/.DS_Store
