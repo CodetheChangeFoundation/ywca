@@ -1,5 +1,5 @@
 <?php
   if (get_field("paragraph_enabled") && get_field("paragraph")) {
-      ?> <p> <?php echo the_field("paragraph");?> </p> <?php
+      ?> <p class="custom-paragraph"> <?php echo the_field("paragraph");?> </p> <?php
   }
  ?>
