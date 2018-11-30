@@ -1,5 +1,4 @@
 <?php
-require get_template_directory() . '/advanced-custom-fields/paragraph.php';
 function bootstrap_enqueue_styles () {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
     $dependencies = array('jquery');
@@ -17,7 +16,7 @@ add_action( 'wp_enqueue_scripts', 'ywca_enqueue_styles' );
 require get_template_directory() . '/custom-fields/primary-button.php';
 require get_template_directory() . '/custom-fields/submit-button.php';
 require get_template_directory() . '/custom-fields/register-button.php';
-
+require get_template_directory() . '/custom-fields/paragraph.php';
 
 add_theme_support('menus');
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';

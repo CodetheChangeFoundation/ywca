@@ -21,14 +21,4 @@
 
 <?php } ?>
 
-<?php
-  $paraEnabled = get_field("paragraph-enabled");
-  if ($paraEnabled) { // Set up varialbes if the paragraph was enabled
-    $para = get_field("paragraph");
-    if ($para) { // If there is something in paragraph, display it
-      echo "<p>${para}</p>";
-    }
-  }
- ?>
-
 <?php get_footer();?>
