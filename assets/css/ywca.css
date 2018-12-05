@@ -43,7 +43,6 @@ h1 {
 }
 
 .container {
-    margin-bottom: 80px;
     margin-top: 80px;
 }
 
@@ -228,7 +227,6 @@ h1 {
 
 #header-nav {
     box-shadow: 0 2px 2px #ebebeb;
-    padding-right: 30px
 }
 
 /* FOOTER */
