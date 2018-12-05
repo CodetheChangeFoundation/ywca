@@ -32,10 +32,10 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span>
         </button>
       </div>
-    
+
       <?php /* Primary navigation */
       wp_nav_menu( array(
           'theme_location'    => 'primary',

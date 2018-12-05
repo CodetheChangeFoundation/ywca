@@ -9,21 +9,32 @@ Blue - #6399AB
 
 /* GLOBALS */
 
-@font-face { font-family: Gotham; src: url('../fonts/Gotham-Light.otf');}
-@font-face { font-family: Gotham; font-weight: bold; src: url('../fonts/Gotham-Bold.otf');}
-@font-face { font-family: Gotham; font-style: italic ; src: url('../fonts/Gotham-BookItalic.otf');}
+@font-face {
+    font-family: Gotham;
+    src: url('../fonts/Gotham-Light.otf');
+}
 
+@font-face {
+    font-family: Gotham;
+    font-weight: bold;
+    src: url('../fonts/Gotham-Bold.otf');
+}
+
+@font-face {
+    font-family: Gotham;
+    font-style: italic;
+    src: url('../fonts/Gotham-BookItalic.otf');
+}
+
+html,
 body {
     font-family: "Gotham", sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
-    font-weight: bold;
-}
-
-ul > li > a {
-    color: black;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -37,16 +48,58 @@ ul > li > a {
 }
 
 .container-fluid {
-    padding: 30px 30px;
     background-color: white;
-    box-shadow:0px 5px 5px #ebebeb
+    box-shadow:0px 5px 5px #ebebeb;
+    padding: 30px 30px;
 }
 
+/* BUTTONS */
+.custom-field-btn {
+    color: #fff;
+    text-transform: uppercase;
+    width: 33%;
+    height: 60px;
+    border-radius: 40px;
+}
+
+.primary-btn {
+    background-color: #92C04E;
+}
+
+.submit-btn {
+    background-color: #F03C69;
+}
+
+.register-btn {
+    background-color: #000;
+}
+
+.custom-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper {
+    height: auto !important;
+    /* height: 100%; */
+    margin: 0 auto -100px;
+    min-height: 100%;
+    padding: 0 15vw;
+}
+
+/* NAV */
+
 .header-logo {
-    height: 50px;
-    width: 200px;
-    padding: 0px 10px;
     border-right: 2px solid black;
+    height: 50px;
+    padding: 0 10px;
+    width: 200px;
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .navbar-header {
@@ -58,12 +111,12 @@ ul > li > a {
 }
 
 .header-title {
-    padding-left: 10px;
-    font-weight: bold;
     color: black;
-    width: 50px;
-    word-wrap: wrap;
+    font-weight: bold;
+    padding-left: 10px;
     text-transform: uppercase;
+    width: 50px;
+    word-wrap: normal;
 }
 
 .icon-bar {
@@ -173,3 +226,62 @@ ul > li > a {
     width: 100%;
 }
 
+#header-nav {
+    box-shadow: 0 2px 2px #ebebeb;
+    padding-right: 30px
+}
+
+/* FOOTER */
+
+.push {
+    height: 100px;
+}
+
+.footer {
+    font-family: Gotham;
+    font-size: 11px;
+    background-color: #EEEEEE;
+    min-height: 125px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 50px 10px;
+    text-align: center;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+#footer-logo-vertical-line {
+    width: 190px;
+    border-right: 2px solid black;
+    padding: 0 15px;
+}
+
+/* CUSTOM FIELDS */
+.custom-title {
+    color: #2B2926;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+}
+
+.title-underline {
+    background-color: #F03C69;
+    margin: 25px auto 0;
+    width: 10vw;
+    height: 2px;
+}
+
+.custom-paragraph {
+    font-family: "Gotham";
+    font-size: 16px;
+    line-height: 30px;
+    color: #2B2926;
+}
