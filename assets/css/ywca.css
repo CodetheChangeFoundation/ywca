@@ -201,6 +201,18 @@ h1 {
     margin: 5px 0px;
 }
 
+.round-list-text {
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+}
+
 .list-steps {
     display: flex;
     flex-direction: column;
