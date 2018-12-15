@@ -41,7 +41,12 @@
 <div class="lower-section">
     <p>You are about to complete the participant registration form for your child to attend YWCA after-school programs. The pieces include:</p>
     <div class="list-steps">
-        <div class="round-list-number">1</div>
+        <div class="list-item">
+            <div class="round-list-number">1</div>
+            <div>Registration Form</div>
+        </div>
+
+        
         <div class="round-list-number">2</div>
         <div class="round-list-number">3</div>
         <div class="round-list-number">4</div>
