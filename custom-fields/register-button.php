@@ -48,9 +48,9 @@ acf_add_local_field_group(array(
 	'location' => array(
 		array(
 			array(
-				'param' => 'page',
+				'param' => 'post_type',
 				'operator' => '==',
-				'value' => '6',
+				'value' => 'page',
 			),
 		),
 	),

@@ -43,12 +43,12 @@ h1 {
 }
 
 .container {
-    margin-bottom: 80px;
     margin-top: 80px;
 }
 
 .container-fluid {
     background-color: white;
+    box-shadow:0px 5px 5px #ebebeb;
     padding: 30px 30px;
 }
 
@@ -121,10 +121,124 @@ h1 {
 .icon-bar {
     background-color: black;
 }
+.welcome-section {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.welcome-text {
+    align-self: center;
+    padding: 0px 100px;
+}
+
+.welcome-text > span:nth-child(1) {
+    font-size: 25px;
+}
+
+.welcome-text > span:nth-child(2) {
+    font-size: 20px;
+}
+
+.mid-section {
+    width: 100%;
+    background-color: #eeeeee;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lower-section {
+    padding: 0px 100px;
+}
+
+.lower-section > p {
+    font-size: 36px;
+    padding: 20px 0px;
+}
+.section-title {
+    align-self: center;
+    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.section-title:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 10px;
+    border-bottom: solid 0.5px #F03C69;
+}
+
+.dot {
+    height: 275px;
+    width: 275px;
+    display: inline-block;
+    border-radius: 50%;
+    flex-direction: column;
+}
+
+.dot-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.round-list-number {
+    height: 60px;
+    width: 60px;
+    padding: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #92C04E;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.round-list-text {
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.list-steps {
+    display: flex;
+    flex-direction: column;
+}
+
+.programs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.program-title {
+    align-self: center;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.home-page-img {
+    width: 100%;
+}
 
 #header-nav {
     box-shadow: 0 2px 2px #ebebeb;
-    padding-right: 30px
 }
 
 /* FOOTER */
@@ -161,23 +275,7 @@ h1 {
 }
 
 /* CUSTOM FIELDS */
-.first-title, .second-title {
-    color: #2B2926;
-    font-weight: normal;
-    font-size: 36px;
-    text-align: center;
-}
-
-.title-underline {
-    background-color: #F03C69;
-    margin: 25px auto 0;
-    width: 10vw;
-    height: 2px;
-}
-
 .custom-paragraph {
     font-family: "Gotham";
-    font-size: 16px;
-    line-height: 30px;
     color: #2B2926;
 }
