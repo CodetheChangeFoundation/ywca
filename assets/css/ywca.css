@@ -275,7 +275,7 @@ h1 {
 }
 
 /* CUSTOM FIELDS */
-.custom-title {
+.first-title, .second-title {
     color: #2B2926;
     font-weight: normal;
     font-size: 36px;

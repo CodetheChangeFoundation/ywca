@@ -17,7 +17,7 @@ require get_template_directory() . '/custom-fields/primary-button.php';
 require get_template_directory() . '/custom-fields/submit-button.php';
 require get_template_directory() . '/custom-fields/register-button.php';
 require get_template_directory() . '/custom-fields/paragraph.php';
-require get_template_directory() . '/custom-fields/title.php';
+require get_template_directory() . '/custom-fields/titles.php';
 
 add_theme_support('menus');
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
