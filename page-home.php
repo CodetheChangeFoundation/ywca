@@ -8,11 +8,13 @@
 <div class="welcome-section">
     <div class="section-title">Welcome!</div>
     <div class="welcome-text">
-        <span>YWCA Metro Vancouver is committed to giving children and youth across Metro Vancouver the tools they need to make smart choices
-            and grow up healthy, happy and engaged in their communities. </span><span>Our after-school programs connect youth with positive role models
-                and inspire them to play a leading role in their personal development and the development of their communities. We offer our programs
-                in Vancouver, Richmond, Surrey and Cloverdale.
-            </span>
+    <?php
+        if(!get_field('enable_paragraph')):
+            if(get_field('paragraph')): ?>
+            <p><?php echo get_field('paragraph') ?></p>
+            <?php endif;
+        endif;
+    ?>
     </div>
 </div>
 
