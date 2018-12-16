@@ -7,7 +7,8 @@
 
     <body>
       <h1>
-        <?php get_template_part('template-parts/title')?>
+        <?php get_template_part('template-parts/first-title')?>
+        <?php get_template_part('template-parts/second-title')?>
       </h1>
       <h3>
         <?php bloginfo('description'); ?>
