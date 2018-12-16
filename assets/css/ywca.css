@@ -83,7 +83,7 @@ h1 {
     /* height: 100%; */
     margin: 0 auto -100px;
     min-height: 100%;
-    padding: 0 15vw;
+    padding-bottom: 20px;
 }
 
 /* NAV */
