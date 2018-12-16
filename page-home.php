@@ -7,19 +7,8 @@
 
 <div class="welcome-section">
     <div class="section-title">Welcome!</div>
-    <div class="welcome-text">
-    <?php
-        if(!get_field('enable_paragraph')):
-            if(get_field('paragraph_large_text')): ?>
-            <?php echo get_field('paragraph_large_text') ?>
-            <?php endif;
-        endif;
-        if(!get_field('enable_paragraph')):
-            if(get_field('paragraph_small_text')): ?>
-            <?php echo get_field('paragraph_small_text') ?>
-            <?php endif;
-        endif;
-    ?>
+    <div class="welcome-text custom-paragraph">
+        <?php get_template_part('template-parts/paragraph'); ?>
     </div>
 </div>
 
@@ -70,11 +59,7 @@
 </div>
 
 <?php
-  if(!get_field('enable_register_button')):
-    if(get_field('register_button')): ?>
-      <p><?php echo get_field('register_button') ?></p>
-    <?php endif;
-  endif;
+  get_template_part('/template-parts/register-button');
 ?>
 
 <?php get_footer();?>

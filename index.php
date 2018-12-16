@@ -12,7 +12,6 @@
       <h3>
         <?php bloginfo('description'); ?>
       </h3>
-      <?php get_template_part('template-parts/paragraph'); ?>
 
       <?php while (have_posts()) {
         the_post();
