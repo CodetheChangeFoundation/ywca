@@ -275,20 +275,6 @@ h1 {
 }
 
 /* CUSTOM FIELDS */
-.first-title, .second-title {
-    color: #2B2926;
-    font-weight: normal;
-    font-size: 36px;
-    text-align: center;
-}
-
-.title-underline {
-    background-color: #F03C69;
-    margin: 25px auto 0;
-    width: 10vw;
-    height: 2px;
-}
-
 .custom-paragraph {
     font-family: "Gotham";
     color: #2B2926;

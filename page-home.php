@@ -6,14 +6,14 @@
 </div>
 
 <div class="welcome-section">
-    <div class="section-title">Welcome!</div>
+    <?php get_template_part('template-parts/first-title')?>
     <div class="welcome-text custom-paragraph">
         <?php get_template_part('template-parts/paragraph'); ?>
     </div>
 </div>
 
 <div class="mid-section">
-    <div class="section-title">Programs</div>
+    <?php get_template_part('template-parts/second-title')?>
     <div class="programs">
         <div class="dot-wrapper">
             <span style="background-color: #92C04E" class="dot"></span>
