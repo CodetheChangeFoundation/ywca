@@ -10,8 +10,13 @@
     <div class="welcome-text">
     <?php
         if(!get_field('enable_paragraph')):
-            if(get_field('paragraph')): ?>
-            <p><?php echo get_field('paragraph') ?></p>
+            if(get_field('paragraph_large_text')): ?>
+            <?php echo get_field('paragraph_large_text') ?>
+            <?php endif;
+        endif;
+        if(!get_field('enable_paragraph')):
+            if(get_field('paragraph_small_text')): ?>
+            <?php echo get_field('paragraph_small_text') ?>
             <?php endif;
         endif;
     ?>
