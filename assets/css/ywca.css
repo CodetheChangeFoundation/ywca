@@ -160,7 +160,7 @@ h1 {
 }
 .section-title {
     align-self: center;
-    font-size: 60px;
+    font-size: 48px;
     padding-top: 20px;
     padding-bottom: 30px;
 }
@@ -171,7 +171,7 @@ h1 {
     margin: 0 auto;
     width: 60%;
     padding-top: 10px;
-    border-bottom: solid 0.5px #F03C69;
+    border-bottom: solid 2px #F03C69;
 }
 
 .dot {
