@@ -1,5 +1,5 @@
-<?php 
-if (get_field("program_three_name")): 
+<?php
+if (get_field("program_three_name")):
     $link = get_field("program_three_link");
     $image = get_field("program_three_image");
     $description = get_field("program_three_description");
@@ -19,5 +19,5 @@ if (get_field("program_three_name")):
         </div>
     <?php if ($link): ?>
         </a>
-    <?php endif; 
+    <?php endif;
 endif;?>
