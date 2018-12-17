@@ -49,7 +49,7 @@
                 <div class="round-list-number">3</div>
                 <div class="round-list-text">Signed Release of Liability and Media Release Form</div>
             </div>
-            <div style="padding-left: 90px; font-size: 22px;">(Note: On the waiver, you will be asked if your child is permitted to walk home or needs to be picked up by an approved adult. If they are permitted to walk home, they will be released from YWCA supervision at the end of the program.</div>
+            <div style="padding-left: 65px; font-size: 16px;">(Note: On the waiver, you will be asked if your child is permitted to walk home or needs to be picked up by an approved adult. If they are permitted to walk home, they will be released from YWCA supervision at the end of the program.</div>
             <div class="list-item">
                 <div class="round-list-number">4</div>
                 <div class="round-list-text">Photo Release and Consent Form</div>
