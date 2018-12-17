@@ -149,9 +149,10 @@ h1 {
 .mid-section {
     width: 100%;
     background-color: #eeeeee;
-    height: 463px;
+    min-height: 463px;
     display: flex;
     flex-direction: column;
+    padding: 0 10vw;
 }
 
 .lower-section {
@@ -187,14 +188,18 @@ h1 {
     height: 175px;
     width: 175px;
     display: inline-block;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     flex-direction: column;
+    /* border: 2px solid #2B2926; */
 }
 
 .dot-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 20vw;
+    min-width: 200px;
+    margin: 5px;
 }
 
 .round-list-number {
@@ -234,9 +239,25 @@ h1 {
 }
 
 .program-title {
-    align-self: center;
+    text-align: center;
     font-size: 24px;
     padding-top: 15px;
+}
+
+.program-description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 33px;
+}
+
+.program-link {
+    text-decoration: none;
+    color: black;
+}
+
+.program-link:hover {
+    text-decoration: none;
+    transform: scale(1.01);
 }
 
 .img-container {
