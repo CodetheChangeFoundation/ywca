@@ -42,17 +42,15 @@ h1 {
     border-bottom: 2px solid black;
 }
 
-.container-fluid {
-    background-color: white;
-    box-shadow:0px 5px 5px #ebebeb;
-    padding: 30px 30px;
-}
 .content-wrapper {
     height: auto !important;
-    /* height: 100%; */
     margin: 0 auto -100px;
     min-height: 100%;
     padding-bottom: 50px;
+}
+
+.row {
+    margin: 0;
 }
 
 /* BUTTONS */
@@ -87,7 +85,13 @@ h1 {
 /* NAV */
 
 .nav-container {
-    margin-top: 128px;
+    background-color: white;
+    box-shadow: 0 5px 6px -3px rgba(100,100,100,0.4);
+    padding: 30px 30px;
+}
+
+.nav-margin {
+    margin-top: 125px;
 }
 
 .header-logo {
@@ -126,15 +130,11 @@ h1 {
     background-color: black;
 }
 
-#header-nav {
-    box-shadow: 0 2px 2px #ebebeb;
-}
-
 /* HOMEPAGE - WELCOME  */
 
 .welcome-section {
+    padding: 0 0 50px 0;
     width: 100%;
-    height: 333px;
     display: flex;
     flex-direction: column;
 }
@@ -152,33 +152,23 @@ h1 {
 .mid-section {
     width: 100%;
     background-color: #eeeeee;
-    min-height: 463px;
     display: flex;
     flex-direction: column;
-    padding: 0 10vw;
+    padding: 0 5vw 50px;
 }
 
 .dot {
     height: 175px;
     width: 175px;
+    align-content: center;
     display: inline-block;
-    /* border-radius: 50%; */
     flex-direction: column;
-    /* border: 2px solid #2B2926; */
 }
 
 .dot-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20vw;
-    min-width: 200px;
-    margin: 5px;
-}
-
-.programs {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .program-title {
@@ -190,32 +180,29 @@ h1 {
 .program-description {
     text-align: center;
     font-size: 16px;
-    line-height: 33px;
+    line-height: 25px;
 }
 
 .program-link {
     text-decoration: none;
     color: black;
-}
-
-.program-link:hover {
-    text-decoration: none;
+    text-align: center;
 }
 
 /* HOMEPAGE - LOWER */
 
 .lower-section {
-    padding: 0px 100px;
+    padding: 0 100px;
 }
 
 .lower-section > p:nth-child(1) {
     font-size: 24px;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 .lower-section > p:nth-child(2) {
     font-size: 18px;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 .round-list-number {
@@ -229,7 +216,7 @@ h1 {
     font-size: 16px;
     font-family: Arial;
     text-align: center;
-    margin: 5px 0px;
+    margin: 5px 0;
 }
 
 .round-list-text {
@@ -241,16 +228,12 @@ h1 {
 .list-item {
     display: flex;
     align-items: center;
-    padding: 12.5px 0px;
+    padding: 12.5px 0;
 }
 
 .list-steps {
     display: flex;
     flex-direction: column;
-}
-
-.img-container {
-    width: 100%;
 }
 
 .home-page-img {
@@ -297,7 +280,7 @@ h1 {
     color: #2B2926;
     line-height:37px;
     align-self: center;
-    padding: 0px 100px;
+    padding: 0 100px;
 }
 
 .section-title {

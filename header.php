@@ -23,9 +23,9 @@
 
 <body <?php body_class() ?>>
 
-<div class="container nav-container">
+<div class="container nav-margin">
   <nav id="header-nav" class="navbar navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
+    <div class="nav-container">
       <div class="navbar-header">
         <img class="header-logo" src="<?php echo get_header_image(); ?>" alt="" />
         <div class="header-title"><?php bloginfo('title')?></div>
