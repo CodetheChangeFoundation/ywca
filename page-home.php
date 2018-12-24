@@ -7,9 +7,7 @@
 
     <div class="welcome-section">
         <?php get_template_part('template-parts/first-title')?>
-        <div class="welcome-text custom-paragraph">
-            <?php get_template_part('template-parts/paragraph'); ?>
-        </div>
+        <?php get_template_part('template-parts/paragraph'); ?>
     </div>
 
     <div class="mid-section">

@@ -23,7 +23,7 @@
 
 <body <?php body_class() ?>>
 
-<div class="container">
+<div class="container nav-container">
   <nav id="header-nav" class="navbar navbar-fixed-top" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
