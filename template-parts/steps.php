@@ -31,40 +31,39 @@
 
         <?php if (get_field("step_3_notes")): ?>
             <div class="list-step-note"><?php the_field("step_3_notes")?></div>
-        <?php endif;
-    endif;?>
+        <?php endif; 
+        
+        if (get_field("step_4")): ?>
+            <div class="list-item">
+                <div class="round-list-number">4</div>
+                <div class="round-list-text"><?php the_field("step_4")?></div>
+            </div>
 
-    <?php if (get_field("step_4")): ?>
-        <div class="list-item">
-            <div class="round-list-number">4</div>
-            <div class="round-list-text"><?php the_field("step_4")?></div>
-        </div>
+            <?php if (get_field("step_4_notes")): ?>
+                <div class="list-step-note"><?php the_field("step_4_notes")?></div>
+            <?php endif;
 
-        <?php if (get_field("step_4_notes")): ?>
-            <div class="list-step-note"><?php the_field("step_4_notes")?></div>
-        <?php endif;
-    endif;?>
+            if (get_field("step_5")): ?>
+                <div class="list-item">
+                    <div class="round-list-number">5</div>
+                    <div class="round-list-text"><?php the_field("step_5")?></div>
+                </div>
+                <?php if (get_field("step_5_notes")): ?>
+                    <div class="list-step-note"><?php the_field("step_5_notes")?></div>
+                <?php endif;
 
-    <?php if (get_field("step_5")): ?>
-        <div class="list-item">
-            <div class="round-list-number">5</div>
-            <div class="round-list-text"><?php the_field("step_5")?></div>
-        </div>
+                if (get_field("step_6")): ?>
+                    <div class="list-item">
+                        <div class="round-list-number">6</div>
+                        <div class="round-list-text"><?php the_field("step_6")?></div>
+                    </div>
 
-        <?php if (get_field("step_5_notes")): ?>
-            <div class="list-step-note"><?php the_field("step_5_notes")?></div>
-        <?php endif;
-    endif;?>
-
-    <?php if (get_field("step_6")): ?>
-        <div class="list-item">
-            <div class="round-list-number">6</div>
-            <div class="round-list-text"><?php the_field("step_6")?></div>
-        </div>
-
-        <?php if (get_field("step_6_notes")): ?>
-            <div class="list-step-note"><?php the_field("step_6_notes")?></div>
-        <?php endif;
+                    <?php if (get_field("step_6_notes")): ?>
+                        <div class="list-step-note"><?php the_field("step_6_notes")?></div>
+                    <?php endif;
+                endif;
+            endif;
+        endif;
     endif;?>
 
 </div>

@@ -189,6 +189,11 @@ h1 {
     text-align: center;
 }
 
+.program-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* HOMEPAGE - LOWER */
 
 .lower-section {

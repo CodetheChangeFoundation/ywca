@@ -15,7 +15,7 @@
 
     <div class="container mid-section">
         <?php get_template_part('template-parts/second-title')?>
-        <div class="row">
+        <div class="row program-row">
             <?php
             get_template_part('template-parts/program-one');
             get_template_part('template-parts/program-two');
