@@ -27,7 +27,7 @@
   <nav id="header-nav" class="navbar navbar-fixed-top" role="navigation">
     <div class="nav-container">
       <div class="navbar-header">
-        <img class="header-logo" src="<?php echo get_header_image(); ?>" alt="" />
+        <img class="header-logo logo-border" src="<?php echo get_header_image(); ?>" alt="YWCA logo" />
         <div class="header-title"><?php bloginfo('title')?></div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
           <span class="icon-bar"></span>

@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="flex-container">
           <div>
-            <img id="footer-logo-vertical-line" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>" />
+            <img class="header-logo logo-border footer-logo" src="<?php echo get_header_image(); ?>" alt="YWCA logo" />
           </div>
         <?php dynamic_sidebar('footer_text');?>
         </div>
