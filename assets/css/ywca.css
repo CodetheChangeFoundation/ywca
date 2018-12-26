@@ -189,18 +189,23 @@ h1 {
     text-align: center;
 }
 
+.program-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* HOMEPAGE - LOWER */
 
 .lower-section {
-    padding: 0 100px;
+    padding: 30px 100px 0px;
 }
 
-.lower-section > p:nth-child(1) {
+.steps-intro {
     font-size: 24px;
     padding: 20px 0;
 }
 
-.lower-section > p:nth-child(2) {
+.steps-ending-notes {
     font-size: 18px;
     padding: 20px 0;
 }
@@ -234,6 +239,11 @@ h1 {
 .list-steps {
     display: flex;
     flex-direction: column;
+}
+
+.list-step-note {
+    padding-left: 65px;
+    font-size: 16px;
 }
 
 .home-page-img {
@@ -271,6 +281,7 @@ h1 {
     width: 190px;
     border-right: 2px solid black;
     padding: 0 15px;
+    margin: 0 15px 0 0;
 }
 
 /* CUSTOM FIELDS */
