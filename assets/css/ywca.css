@@ -56,12 +56,34 @@ h1 {
 /* BUTTONS */
 .custom-field-btn {
     color: #fff;
+    border-width: 0;
     text-transform: uppercase;
-    width: 33%;
+    width: 100%;
     height: 56px;
     border-radius: 40px;
+    letter-spacing: 1px;
     font-size: 16px;
     font-family: "Gotham", sans-serif;
+}
+
+.custom-btn-link {
+    text-decoration: none;
+    width: 33%;
+    border-radius: 40px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.button-black {
+    background-color: #282926;
+}
+
+.button-green {
+    background-color: #92C04E;
+}
+
+.button-pink {
+    background-color: #F03C69;
 }
 
 .primary-btn {
