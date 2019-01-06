@@ -1,8 +1,5 @@
 <?php
 require get_template_directory() . '/custom-fields/button.php';
-require get_template_directory() . '/custom-fields/primary-button.php';
-require get_template_directory() . '/custom-fields/submit-button.php';
-require get_template_directory() . '/custom-fields/register-button.php';
 require get_template_directory() . '/custom-fields/paragraph.php';
 require get_template_directory() . '/custom-fields/titles.php';
 require get_template_directory() . '/custom-fields/programs.php';

@@ -86,18 +86,6 @@ h1 {
     background-color: #F03C69;
 }
 
-.primary-btn {
-    background-color: #92C04E;
-}
-
-.submit-btn {
-    background-color: #F03C69;
-}
-
-.register-btn {
-    background-color: #282926;
-}
-
 .custom-btn-wrapper {
     display: flex;
     justify-content: center;
