@@ -61,7 +61,7 @@ h1 {
     height: 56px;
     border-radius: 40px;
     font-size: 16px;
-    font-family: Arial;
+    font-family: "Gotham", sans-serif;
 }
 
 .primary-btn {
@@ -74,7 +74,6 @@ h1 {
 
 .register-btn {
     background-color: #282926;
-    margin-top: 30px;
 }
 
 .custom-btn-wrapper {
@@ -90,19 +89,23 @@ h1 {
     padding: 30px 30px;
 }
 
+.menu-item {
+    margin: 0 5px;
+}
 .nav-margin {
-    margin-top: 125px;
+    margin-top: 110px;
 }
 
 .header-logo {
     max-height: 50px;
-    padding: 0 10px;
+    padding: 0 10px 0 0;
     max-width: 200px;
 }
 
 .logo-border {
     border-right: 2px solid black;
 }
+
 .nav-link {
     color: black;
     font-weight: bold;
@@ -121,11 +124,13 @@ h1 {
 .header-title {
     color: black;
     font-weight: bold;
+    padding-top: 5px;
     padding-left: 10px;
     text-transform: uppercase;
-    width: 50px;
+    width: 200px;
     word-wrap: normal;
     font-size: 16px;
+    line-height: 20px;
 }
 
 .icon-bar {
@@ -199,7 +204,7 @@ h1 {
 /* HOMEPAGE - LOWER */
 
 .lower-section {
-    padding: 30px 100px 0px;
+    padding: 30px 100px 0;
 }
 
 .steps-intro {
