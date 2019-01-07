@@ -27,8 +27,6 @@
         <?php get_template_part('template-parts/steps'); ?>
     </div>
 
-    <?php
-    get_template_part('/template-parts/register-button');
-    ?>
+    <?php get_template_part('/template-parts/button'); ?>
 </div>
 <?php get_footer();?>

@@ -1,5 +1,4 @@
-<?php
-if( function_exists('acf_add_local_field_group') ):
+<?php if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_5c20789187a89',
@@ -345,9 +344,9 @@ acf_add_local_field_group(array(
 	'location' => array(
 		array(
 			array(
-				'param' => 'page',
+				'param' => 'page_type',
 				'operator' => '==',
-				'value' => '8',
+				'value' => 'front_page',
 			),
 		),
 	),
@@ -361,5 +360,4 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
-endif;
-?>
+endif; ?>
