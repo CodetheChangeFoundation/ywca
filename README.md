@@ -1,7 +1,5 @@
-# YWCA
+# Project Archived 
 
-Meetings: Wednesday 5-8pm SWNG 307
-Custom Wordpress Theme Development for YWCA.
 
 ## Tech Stack
 HTML, CSS, PHP, JS, Bootstrap, Wordpress - Front End
